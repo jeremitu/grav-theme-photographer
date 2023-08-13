@@ -47,7 +47,7 @@
         {% endblock %}
 
         <script>
-        $(window).load( function(){
+        $(window).on( function(){
 
          jQuery('.camera_wrap').camera();
 
@@ -77,6 +77,6 @@
              {% include 'partials/footer.html.twig' %}
         {% endblock %}
 
-        {{ assets.js('bottom')|raw }} 
+        {{ assets.js('bottom')|raw }}
     </body>
 </html>
