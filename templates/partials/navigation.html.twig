@@ -39,7 +39,7 @@
                 {% if mitem.submenu %}
                     <ul>
                         {% for sub1 in mitem.submenu %}
-                            <li>{% if loop.first %}<img src="{{ theme_url }}/img/arrowup.png" alt="">{% endif %}
+                            <li>{% if loop.first %}<img src="{{ url('theme://img/arrowup.png') }}" alt="">{% endif %}
                                 <a href="{{ sub1.link }}">
                                     {{ sub1.text }}
                                 </a>
@@ -60,4 +60,4 @@
                 {% endif %}
             </li>
         {% endfor %}
-    </ul>   
+    </ul>
